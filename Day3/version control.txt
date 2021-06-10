@@ -1,0 +1,170 @@
+Microsoft Windows [Version 10.0.19042.985]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git init
+Initialized empty Git repository in C:/Users/Neeraj sharma/OneDrive/Documents/Desktop/temporary/.git/
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 1.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 2.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "initial commit"
+[master (root-commit) 0a64d5d] initial commit
+ 2 files changed, 8 insertions(+)
+ create mode 100644 file 1.txt
+ create mode 100644 file 2.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 3.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "file 3 created"
+[master 5c37e49] file 3 created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file 3.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git log
+commit 5c37e49ce1e8c3b02c2f77bf5bfd2fafbdb66e1f (HEAD -> master)
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:35:48 2021 +0530
+
+    file 3 created
+
+commit 0a64d5d1f99fb1c4af3c04362286e3fb9c5a9216
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:29:52 2021 +0530
+
+    initial commit
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 3.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "only file 3 commited"
+[master 176160a] only file 3 commited
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 4.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "only file 4 commited"
+[master d733cc9] only file 4 commited
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file 4.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git log
+commit d733cc9172c1f5634edb40e9094133f26643deb0 (HEAD -> master)
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:39:02 2021 +0530
+
+    only file 4 commited
+
+commit 176160a330509d17ef6f8384fd442e0f45726763
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:38:05 2021 +0530
+
+    only file 3 commited
+
+commit 5c37e49ce1e8c3b02c2f77bf5bfd2fafbdb66e1f
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:35:48 2021 +0530
+
+    file 3 created
+
+commit 0a64d5d1f99fb1c4af3c04362286e3fb9c5a9216
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:29:52 2021 +0530
+
+    initial commit
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout 0a64d5d1f99fb
+Note: checking out '0a64d5d1f99fb'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 0a64d5d initial commit
+M       file 2.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git log
+commit 0a64d5d1f99fb1c4af3c04362286e3fb9c5a9216 (HEAD)
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:29:52 2021 +0530
+
+    initial commit
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout -
+Previous HEAD position was 0a64d5d initial commit
+Switched to branch 'master'
+M       file 2.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git log
+commit d733cc9172c1f5634edb40e9094133f26643deb0 (HEAD -> master)
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:39:02 2021 +0530
+
+    only file 4 commited
+
+commit 176160a330509d17ef6f8384fd442e0f45726763
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:38:05 2021 +0530
+
+    only file 3 commited
+
+commit 5c37e49ce1e8c3b02c2f77bf5bfd2fafbdb66e1f
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:35:48 2021 +0530
+
+    file 3 created
+
+commit 0a64d5d1f99fb1c4af3c04362286e3fb9c5a9216
+Author: Neeraj Sharma <nsharma0619@gmail.com>
+Date:   Thu Jun 10 12:29:52 2021 +0530
+
+    initial commit
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout 176160a330509d17ef6f8
+Note: checking out '176160a330509d17ef6f8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 176160a only file 3 commited
+M       file 2.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git status
+HEAD detached at 176160a
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file 2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add "file 2.txt"
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git status
+HEAD detached at 176160a
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file 2.txt
+
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "abcd"
+[detached HEAD c544c3c] abcd
+ 1 file changed, 3 insertions(+), 1 deletion(-)

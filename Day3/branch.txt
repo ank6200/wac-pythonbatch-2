@@ -1,0 +1,76 @@
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch
+* master
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch testing
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch dev
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch
+  dev
+* master
+  testing
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch
+* dev
+  master
+  testing
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add .
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "file 5"
+[dev 339fd12] file 5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file 5.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout master
+Switched to branch 'master'
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout testing
+Switched to branch 'testing'
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git merge dev
+Updating d733cc9..339fd12
+Fast-forward
+ file 5.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file 5.txt
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch -d dev
+Deleted branch dev (was 339fd12).
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git branch
+  master
+* testing
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add .
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "last commit"
+[testing ccc9af2] last commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git checkout master
+Switched to branch 'master'
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add .
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "last commit on master"
+[master ada4a42] last commit on master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git merge testing
+Auto-merging file 1.txt
+CONFLICT (content): Merge conflict in file 1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git add .
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>git commit -m "auto merged failed"
+[master a59ff3a] auto merged failed
+
+C:\Users\Neeraj sharma\OneDrive\Documents\Desktop\temporary>
+
+
+
